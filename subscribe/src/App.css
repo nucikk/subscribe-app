@@ -23,6 +23,9 @@
   text-transform: uppercase;
 }
 
+.game_name {
+  color: gold;
+}
 button {
   background-color: #A974F4; 
   color: white; 
