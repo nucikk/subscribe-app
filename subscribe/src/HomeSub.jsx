@@ -8,10 +8,8 @@ const HomeSub = () => {
   const [displayEmailMsg, setDisplayEmailMsg] = useState(false);
 
   function handleSubmitForm(e) {
-    e.preventDefault();   
-     setDisplayEmailMsg(true);
-  
-
+    e.preventDefault();
+    setDisplayEmailMsg(true);
   }
   //თამაშის სახელის განახლების ფუნქცია: რანდომად მოქვს gameData ჯსონ ფორმატიდან თამაშის სახელები
   function handleButtonClick() {
@@ -58,7 +56,8 @@ const HomeSub = () => {
           {/* displayEmailMsg სტეიტის მნიშვნელობა თუ იქნება true გამოჩნდება შეტყობინება და ასევე მომხმარებლის მიერ გაგზავნილი ელ.ფოსტა */}
           {displayEmailMsg && (
             <p>
-            Your email has been successfully sent:  <span className="user_email">{userEmail}</span> 
+              Your email has been successfully sent:{" "}
+              <span className="user_email">{userEmail}</span>
             </p>
           )}
         </div>
