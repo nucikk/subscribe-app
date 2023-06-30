@@ -17,6 +17,7 @@
   margin: 0;
   background-color: #5C649C;
   border-radius: 1.25rem;
+  position: relative; 
 }
 .game_box {
   padding-bottom: 20px;
@@ -44,7 +45,16 @@
   align-items:flex-start;
   border: 2px solid #949CBC;
 }
-
+.user_email {
+  color: #acfb19;
+  font-size: 22px;
+  font-weight: bold;
+}
+.privacy_box {
+  position: absolute;
+  bottom: 0;
+  color: #dceaf2;
+}
 button {
   display: flex;
   background-color: #A974F4; 

@@ -6,6 +6,7 @@ const HomeSub = () => {
   const [gameName, setGameName] = useState("Let's start the game:");
   const [userEmail, setUserEmail] = useState("");
   const [displayEmailMsg, setDisplayEmailMsg] = useState(false);
+  const [privacyText, setPrivacyText] = useState(true);
 
   function handleSubmitForm(e) {
     e.preventDefault();
@@ -60,6 +61,18 @@ const HomeSub = () => {
               <span className="user_email">{userEmail}</span>
             </p>
           )}
+          <div className="privacy_box">
+          {/* privacyText მდგომარეობა განსაზღვრავს, ნაჩვენები იქნება თუ არა სრული შეტყობინება checkbox დაჭერისას შეიცვლება ტექსტი*/}
+            {privacyText ? (
+              <p>
+                By signing up, you agree to our Terms of Use and acknowledge the
+                data practices in our Privacy Policy. You may unsubscribe at any
+                time. <input type="checkbox" name="privacy"  onClick={() => setPrivacyText(false)}/>
+              </p>
+            ) : (
+              <p>Privacy Policy Check</p>
+            )}
+          </div>
         </div>
       </form>
     </>
